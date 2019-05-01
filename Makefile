@@ -1,17 +1,17 @@
-CC		:= g++
-C_FLAGS := -std=c++17 -Wall -Wextra
+CC		= g++
+C_FLAGS = -std=c++17 -Wall -Wextra
 
-BIN		:= bin
-SRC		:= src
-INCLUDE	:= include
-LIB		:= lib
+BIN		= bin
+SRC		= src
+INCLUDE	= include
+LIB		= lib
 
-LIBRARIES	:=
+LIBRARIES	=
 
 ifeq ($(OS),Windows_NT)
-EXECUTABLE	:= main.exe
+EXECUTABLE	= main.exe
 else
-EXECUTABLE	:= main
+EXECUTABLE	= main
 endif
 
 all: $(BIN)/$(EXECUTABLE)
